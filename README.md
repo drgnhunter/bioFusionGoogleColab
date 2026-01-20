@@ -1,6 +1,7 @@
 Pneumonia Detection from Chest X-Rays
 
-This project features a deep learning model developed for the BioFusion hackathon (University of Sri Jayewardenepura, 2026) designed to assist in the early detection of pneumonia. By analyzing chest X-ray images, the model provides a binary classification to identify signs of infection, aiming to support clinical workflows and improve diagnostic speed.
-​Technically, the model is built on a neural network architecture trained using fundamental optimization principles. It utilizes forward propagation to generate predictions by passing input data through multiple layers of neurons and backward propagation to calculate gradients and update weights. This iterative process minimizes the loss function, ensuring high accuracy and robust performance in identifying various patterns associated with pneumonia.
+This project features a deep learning model developed for the BioFusion hackathon (University of Sri Jayewardenepura, 2026) designed to assist in the early detection of pneumonia. The model is a custom CNN architecture that was built and trained entirely from scratch. It specifically avoids the use of pre-trained models to ensure that the convolutional kernels are optimized for the high-contrast, grayscale textures of lung radiographs rather than natural world objects.
 
 Dataset: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+
+The custom Convolutional Neural Network architecture extracts hierarchical features through multiple convolutional layers, utilizes Batch Normalization and ReLU activation for stable non-linear operations, and incorporates Max Pooling and Dropout regularization to efficiently reduce dimensionality while preventing overfitting. 
